@@ -42,7 +42,7 @@ public class SpitterController {
 		}
 
 		spitterRepository.save(spitter);
-		return "redirect:/spitter/" + spitter.getUsername();
+		return "redirect:/spittr/" + spitter.getUsername();
 	}
 	@RequestMapping(value = "/{username}",method=RequestMethod.GET)
 	public String showSpitterProfile(
